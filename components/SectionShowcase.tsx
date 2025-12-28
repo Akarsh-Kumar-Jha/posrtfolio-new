@@ -57,11 +57,54 @@ function SectionShowcase({ section }: { section: Section }) {
         )}
 
         {/* Markdown Content */}
-<div className="prose prose-neutral dark:prose-invert max-w-none leading-normal">
-    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-      {section.content}
-    </ReactMarkdown>
-  </div>
+<div
+  className="
+    prose
+    prose-neutral
+    dark:prose-invert
+    max-w-none
+    leading-relaxed
+
+    prose-headings:font-sans
+    prose-headings:tracking-normal
+    prose-h1:text-primary
+    prose-h2:text-foreground
+    prose-h3:text-foreground
+
+    prose-p:text-foreground
+    prose-p:leading-7
+
+    prose-a:text-accent
+    prose-a:font-medium
+    prose-a:no-underline
+    hover:prose-a:underline
+
+    prose-strong:text-foreground
+    prose-code:text-accent
+    prose-code:bg-muted
+    prose-code:px-1
+    prose-code:py-0.5
+    prose-code:rounded-none
+
+    prose-pre:bg-muted
+    prose-pre:text-foreground
+    prose-pre:shadow-sm
+
+    prose-blockquote:border-l-primary
+    prose-blockquote:text-muted-foreground
+
+    prose-hr:border-border
+
+    prose-img:shadow-md
+    prose-img:border
+    prose-img:border-border
+  "
+>
+  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+    {section.content}
+  </ReactMarkdown>
+</div>
+
 
         {/* Code Blocks */}
         {section.code.length > 0 && (
