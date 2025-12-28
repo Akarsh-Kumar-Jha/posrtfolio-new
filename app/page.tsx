@@ -2,6 +2,7 @@ import AboutMe from '@/components/AboutMe'
 import FeaturedBlogs from '@/components/FeaturedBlogs'
 import FeaturedProjects from '@/components/FeaturedProjects'
 import LandingPage from '@/components/LandingPage'
+import RandomQuote from '@/components/RandomQuote'
 import React from 'react'
 
 function HomePage() {
@@ -11,6 +12,7 @@ function HomePage() {
      <FeaturedProjects />
      <AboutMe />
      <FeaturedBlogs />
+     <RandomQuote />
    </div>
   )
 }

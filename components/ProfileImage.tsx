@@ -17,6 +17,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { CiTwitter } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 function ProfileImage() {
   return (
@@ -94,12 +95,14 @@ function ProfileImage() {
         </div>
       </div>
       <div className="w-full md:mr-auto md:ml-2 mt-4 flex flex-wrap justify-center md:justify-start items-center gap-4">
-        <Button className="bg-primary border-2 border-border hover:bg-accent text-black font-semibold flex-1 md:flex-none">
+        <Button onClick={() => window.open('https://drive.google.com/file/d/1-OX0m3pcWF6bu2FnQg-r_nq3QyX2OX2g/view?usp=sharing',"_blank")} className="bg-primary border-2 border-border hover:bg-accent text-black font-semibold flex-1 md:flex-none">
           <PiReadCvLogo /> Resume/CV
         </Button>
+       <Link href={'/contact'}>
         <Button className="bg-secondary border-2 border-border hover:bg-accent text-black font-semibold flex-1 md:flex-none">
           <IoIosSend /> Get In Touch
         </Button>
+       </Link>
       </div>
 
       <div className="mt-5 w-full md:mr-auto md:ml-2 flex flex-wrap justify-center md:justify-start items-center gap-3">
@@ -126,7 +129,7 @@ function ProfileImage() {
           },
           {
             name: "Email",
-            link: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMvXsmhRxlNPDKkPWlPBDBSSJMjBHnhWcpbvFGShzKGfFVTzPnBfSsSMwLjdljLbNLsbSD",
+            link: "https://mail.google.com/mail/?view=cm&fs=1&to=akarshdbg@gmail.com",
             icon: MdOutlineMail,
           },
         ].map((item, index) => {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Akarsh Jha Portfolio",
@@ -23,6 +24,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="w-[92%] md:w-[75%] lg:w-[50%] mx-auto">
+             <Toaster />
             <Navbar />
             <main>{children}</main>
             <footer className="w-full flex justify-center items-center text-base md:text-lg text-wrap mt-10 text-foreground p-3 border-t-2 border-border text-center">
