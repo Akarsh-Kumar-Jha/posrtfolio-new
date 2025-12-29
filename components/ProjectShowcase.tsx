@@ -19,6 +19,7 @@ interface Project {
   }[];
 };
 
+
 function ProjectShowcase({ project }: { project: Project }) {
   return (
     <motion.div
