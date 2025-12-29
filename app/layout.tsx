@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Akarsh Jha | Full Stack Developer",
     description:
       "Explore projects, blogs, and experiments built with modern web technologies and AI.",
-    url: "https://yourdomain.com",
+    url: "https://www.akarshjha.dev/",
     siteName: "Akarsh Jha Portfolio",
     images: [
       {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     description:
       "Projects, blogs, and experiments built using Next.js, React, Supabase, and AI.",
     images: ["/og-image.png"],
-    creator: "@yourTwitterHandle",
+    creator: "@AkarshJha_",
   },
 
   robots: {
