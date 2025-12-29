@@ -5,11 +5,68 @@ import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Akarsh Jha Portfolio",
-  description: "Akarsh Jha Portfolio Website with Next.js",
+  metadataBase: new URL("https://www.akarshjha.dev/"),
+
+  title: {
+    default: "Akarsh Jha | Full Stack Developer",
+    template: "%s | Akarsh Jha",
+  },
+
+  description:
+    "Portfolio of Akarsh Jha, a full-stack developer building modern web applications using Next.js, React, MongoDB, Supabase, and AI.",
+
+  keywords: [
+    "Akarsh Jha",
+    "Full Stack Developer",
+    "Next.js Portfolio",
+    "React Developer",
+    "Web Developer",
+    "MongoDB",
+    "Supabase",
+    "AI Projects",
+  ],
+
+  authors: [{ name: "Akarsh Jha" }],
+  creator: "Akarsh Jha",
 
   verification: {
     google: "oJHD9BwkLVDRAC78_6a7QQpc_KhWjXoeeOY0yEqm2bM",
+  },
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Akarsh Jha | Full Stack Developer",
+    description:
+      "Explore projects, blogs, and experiments built with modern web technologies and AI.",
+    url: "https://yourdomain.com",
+    siteName: "Akarsh Jha Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Akarsh Jha Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Akarsh Jha | Full Stack Developer",
+    description:
+      "Projects, blogs, and experiments built using Next.js, React, Supabase, and AI.",
+    images: ["/og-image.png"],
+    creator: "@yourTwitterHandle",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
