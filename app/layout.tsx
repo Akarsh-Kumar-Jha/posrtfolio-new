@@ -4,10 +4,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
 
-export const metadata = {
-  verification: {
-    google: "oJHD9BwkLVDRAC78_6a7QQpc_KhWjXoeeOY0yEqm2bM",
-  },
+export const metadata: Metadata = {
+  title: "Akarsh Jha Portfolio",
+  description: "Akarsh Jha Portfolio Website with Next.js",
 };
 
 export default function RootLayout({
