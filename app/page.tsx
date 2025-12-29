@@ -7,7 +7,7 @@ import React from 'react'
 
 function HomePage() {
   return (
-   <div className='w-full flex flex-col gap-y-16 md:gap-y-10'>
+   <div className='w-full flex flex-col gap-y-16 md:gap-y-8 lg:gap-y-12'>
      <LandingPage />
      <FeaturedProjects />
      <AboutMe />

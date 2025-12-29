@@ -14,7 +14,11 @@ export const metadata: Metadata = {
 
   description:
     "Portfolio of Akarsh Jha, a full-stack developer building modern web applications using Next.js, React, MongoDB, Supabase, and AI.",
-
+ icons: {
+    icon: "/favicon.ico",  
+    shortcut: "/favicon.ico",      
+    apple: "/apple-touch-icon.png"
+  },
   keywords: [
     "Akarsh Jha",
     "Full Stack Developer",

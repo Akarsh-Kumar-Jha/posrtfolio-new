@@ -25,7 +25,7 @@ function ProfileImage() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
-      className="w-full h-full flex flex-col justify-start items-center gap-y-5"
+      className="w-full h-full flex flex-col justify-start items-center gap-y-7"
     >
       <div className="size-28 md:size-36 rounded-full object-cover border-2 border-border md:mr-auto md:ml-5 mt-5">
         <img
