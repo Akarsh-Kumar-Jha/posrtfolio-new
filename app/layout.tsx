@@ -7,7 +7,12 @@ import { Toaster } from "react-hot-toast";
 export const metadata: Metadata = {
   title: "Akarsh Jha Portfolio",
   description: "Akarsh Jha Portfolio Website with Next.js",
+
+  verification: {
+    google: "oJHD9BwkLVDRAC78_6a7QQpc_KhWjXoeeOY0yEqm2bM",
+  },
 };
+
 
 export default function RootLayout({
   children,
