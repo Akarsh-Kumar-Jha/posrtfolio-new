@@ -4,8 +4,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
 
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Akarsh Jha Portfolio",
   description: "Akarsh Jha Portfolio Website with Next.js",
