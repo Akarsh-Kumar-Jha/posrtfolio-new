@@ -90,7 +90,7 @@ function ProfileImage() {
                 link="https://www.postgresql.org/docs/"
               />
             </span>{" "}
-            , focusing on clean and intuitive interfaces.
+             focusing on clean and intuitive interfaces.
           </p>
         </div>
       </div>
