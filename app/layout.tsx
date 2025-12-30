@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Akarsh Jha, a full-stack developer building modern web applications using Next.js, React, MongoDB, Supabase, and AI.",
  icons: {
-    icon: "/favicon.ico",  
-    shortcut: "/favicon.ico",      
-    apple: "/apple-touch-icon.png"
+    icon: "/favicon.ico",         
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png" 
   },
   keywords: [
     "Akarsh Jha",
@@ -74,7 +74,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -93,9 +92,9 @@ export default function RootLayout({
              <Toaster />
             <Navbar />
             <main>{children}</main>
-            <footer className="w-full flex justify-center items-center text-base md:text-lg text-wrap mt-10 text-foreground p-3 border-t-2 border-border text-center">
+            <footer className="w-full flex justify-center items-center text-sm md:text-xs text-wrap mt-10 text-foreground p-3 border-t-2 border-border text-center">
               <div className="w-full">
-                Design & Developed by Akarsh Jha © 2025. All rights reserved.
+                Design & Developed by Akarsh Jha © {new Date().getFullYear()}. All rights reserved.
               </div>
             </footer>
           </div>

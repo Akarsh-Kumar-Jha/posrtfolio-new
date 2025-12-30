@@ -26,7 +26,7 @@ function ProjectShowcase({ project }: { project: Project }) {
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
       onClick={() => window.open(project.link, '_blank')}
-      className="group cursor-pointer h-auto min-h-120 w-full sm:w-80 font-mono rounded-2xl bg-card border-2 border-border overflow-hidden flex flex-col shadow-sm hover:shadow-xl transition-shadow"
+      className="group font-serif cursor-pointer h-auto min-h-120 w-full sm:w-80 rounded-2xl bg-card border-2 border-border overflow-hidden flex flex-col shadow-sm hover:shadow-xl transition-shadow"
     >
       <div className="h-48 sm:h-[40%] w-full overflow-hidden">
         <motion.img

@@ -30,7 +30,7 @@ function SectionShowcase({ section }: { section: Section }) {
         </CardTitle>
 
         {/* Accent Divider */}
-        <div className="mt-4 h-[3px] w-24 rounded-full bg-gradient-to-r from-primary to-secondary" />
+        <div className="mt-4 h-0.75 w-24 rounded-full bg-linear-to-r from-primary to-secondary" />
       </CardHeader>
 
       <CardContent className="relative px-5 md:px-8 pb-10 flex flex-col gap-y-10">
@@ -46,11 +46,11 @@ function SectionShowcase({ section }: { section: Section }) {
                 <img
                   src={image}
                   alt={section.heading}
-                  className="w-full max-h-[520px] object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  className="w-full max-h-130 object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
 
                 {/* Image overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
               </div>
             ))}
           </div>
@@ -113,7 +113,7 @@ function SectionShowcase({ section }: { section: Section }) {
               <div key={index} className="relative group">
                 
                 {/* Code Glow */}
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/30 to-secondary/30 blur-lg opacity-20 group-hover:opacity-40 transition duration-700" />
+                <div className="absolute -inset-1 rounded-2xl bg-linear-to-r from-primary/30 to-secondary/30 blur-lg opacity-20 group-hover:opacity-40 transition duration-700" />
 
                 <div className="relative rounded-2xl overflow-hidden">
                   <CodeBlock

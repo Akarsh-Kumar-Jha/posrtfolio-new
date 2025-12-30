@@ -10,7 +10,7 @@ function AboutMe() {
             <h2 className='text-2xl md:text-3xl text-foreground text-left self-start border-b-2 border-border'><span className='text-foreground/60'>About</span> MySelf</h2>
             
             <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-x-5'>
-                <div className='w-full md:w-[70%] text-base md:text-lg font-semibold font-mono tracking-normal leading-snug text-left'>
+                <div className='font-sans w-full md:w-[70%] text-base md:text-lg font-semibold tracking-wide leading-snug text-left'>
                     I am a final-year B.Tech Computer Science (AI) student with a strong interest in full-stack development. I have experience building web applications using React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Python, and LangChain. I also have a solid foundation in C++ and Data Structures, and I’m eager to keep learning and contribute to impactful real-world projects.
                 </div>
                 <motion.div 
