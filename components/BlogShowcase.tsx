@@ -3,8 +3,10 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { BiCalendar } from 'react-icons/bi';
 import Link from 'next/link';
+import { MapPinnedIcon } from 'lucide-react';
+import { IconPinned } from '@tabler/icons-react';
 
-export interface Blog {
+interface Blog {
   id: number;
   title: string;
   slug: string;
@@ -14,7 +16,8 @@ export interface Blog {
   is_published: boolean;
   created_at: string;
   updated_at: string;
-};
+  pinned: boolean
+}
 
 function BlogShowcase({ blog }: { blog: Blog }) {
   const createdAtDate = new Date(blog.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -23,8 +26,14 @@ function BlogShowcase({ blog }: { blog: Blog }) {
       <motion.div
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 200, damping: 15 }}
-        className="group hover:bg-muted cursor-pointer h-auto min-h-112.5 w-full sm:w-80 font-mono rounded-2xl bg-card border-2 border-border overflow-hidden flex flex-col shadow-sm hover:shadow-xl transition-shadow"
+        className="group relative hover:bg-card cursor-pointer h-auto min-h-112.5 w-full sm:w-80 font-mono rounded-2xl bg-muted border-2 border-border overflow-hidden flex flex-col shadow-sm hover:shadow-xl transition-shadow"
       >
+{blog.pinned && (
+  <span className="absolute top-3 right-3 flex items-center gap-1 rounded-full border border-border bg-background/80 backdrop-blur px-2 py-1 text-xs font-semibold text-foreground shadow-sm">
+    <IconPinned size={14} />
+    Pinned
+  </span>
+)}
         <div className="h-48 sm:h-[40%] w-full overflow-hidden">
           <motion.img
             whileHover={{ scale: 1.05 }}
