@@ -46,7 +46,7 @@ async function RandomQuote() {
         className="max-w-3xl w-full p-4 flex flex-col gap-3
                    bg-card border-2 border-border rounded-2xl"
       >
-        <p className="text-lg md:text-xl italic text-foreground leading-relaxed">
+        <p className="text-sm md:text-lg italic text-foreground leading-relaxed">
           “{quoteData.content}”
         </p>
 
