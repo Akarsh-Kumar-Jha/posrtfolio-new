@@ -34,7 +34,7 @@ async function FeaturedBlogs() {
       </h2>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-x-5 md:gap-y-3">
         {data?.map((blog: Blog) => {
-          return <BlogShowcase key={blog.id} blog={blog} />;
+          return <BlogShowcase key={blog.id} blog={blog} />
         })}
       </div>
       <div className="mt-5 mb-5 w-full flex justify-center items-center">
