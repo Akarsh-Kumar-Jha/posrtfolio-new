@@ -14,7 +14,7 @@ interface Blog {
   is_published: boolean;
   created_at: string;
   updated_at: string;
-  pinned: boolean
+  pinned: boolean;
 }
 
 async function BlogsPage() {
@@ -27,7 +27,7 @@ async function BlogsPage() {
       <h2 className='text-2xl md:text-3xl text-foreground border-b-2 border-border font-semibold'>Blogs</h2>
       <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-10 md:gap-y-10 justify-items-center'>
         {
-          pinned?.map((blog) => (
+          pinned && pinned?.length>0 && pinned.map((blog) => (
             <BlogShowcase key={blog.id} blog={blog} />
           ))
         }

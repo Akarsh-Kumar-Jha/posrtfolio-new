@@ -4,7 +4,7 @@ import BlogShowcase from "./BlogShowcase";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
-export interface Blog {
+interface Blog {
   id: number;
   title: string;
   slug: string;
@@ -14,7 +14,8 @@ export interface Blog {
   is_published: boolean;
   created_at: string;
   updated_at: string;
-}
+  pinned: boolean
+};
 
 async function FeaturedBlogs() {
   const supabase = await createClient();
