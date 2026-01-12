@@ -18,7 +18,7 @@ interface Section {
 
 function SectionShowcase({ section }: { section: Section }) {
   return (
-    <Card className="relative w-full bg-card border border-border rounded-3xl overflow-hidden">
+    <Card className="relative w-full bg-transparent border border-border/40 hover:border-border/70 transition-border duration-300 rounded-3xl overflow-hidden">
       
       {/* Soft background glow */}
       <div className="absolute inset-0 pointer-events-none" />
