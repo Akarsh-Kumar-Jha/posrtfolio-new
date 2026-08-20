@@ -7,7 +7,7 @@ import React, { Suspense } from 'react'
 
 async function HomePage() {
   return (
-   <div className='w-full flex flex-col gap-y-16 md:gap-y-8 lg:gap-y-5'>
+   <div className='w-full flex flex-col gap-y-16 md:gap-y-8 lg:gap-y-5 xl:gap-y-3 2xl:gap-y-2'>
      <LandingPage />
      <FeaturedProjects />
      <AboutMe />

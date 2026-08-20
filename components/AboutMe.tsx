@@ -6,7 +6,7 @@ import { SiCplusplus, SiExpress, SiFramer, SiGit, SiJavascript, SiLangchain, SiM
 function AboutMe() {
     const constraintsRef = useRef<HTMLDivElement>(null);
     return (
-        <section id='about' className='min-h-screen w-full flex flex-col justify-center items-center gap-y-10 py-5'>
+        <section id='about' className='min-h-screen xl:min-h-fit w-full flex flex-col justify-center items-center gap-y-10 xl:gap-y-6 py-5 xl:py-8'>
             <h2 className='text-2xl md:text-3xl text-foreground text-left self-start border-b-2 border-border'><span className='text-foreground/60'>About</span> MySelf</h2>
             
             <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-x-5'>

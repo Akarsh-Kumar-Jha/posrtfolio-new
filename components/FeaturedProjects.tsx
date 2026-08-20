@@ -2,7 +2,8 @@
 import React from 'react'
 import ProjectShowcase from './ProjectShowcase';
 import { IconType } from 'react-icons';
-import { SiExpress, SiGoogle, SiMongodb, SiReact, SiSocketdotio } from 'react-icons/si';
+import { SiExpress, SiGithub, SiGoogle, SiLangchain, SiMongodb, SiNodedotjs, SiPrisma, SiReact, SiSocketdotio, SiSupabase, SiZod } from 'react-icons/si';
+import { TbCpu, TbHierarchy3 } from 'react-icons/tb';
 import { Button } from './ui/button';
 import Link from 'next/link';
 
@@ -25,7 +26,7 @@ function FeaturedProjects() {
     {
       id: 1,
       title: "Codox",
-      description: "A real-time collaborative coding platform for learning, teamwork, and faster development together.",
+      description: "A real-time collaborative coding platform for interactive learning, teamwork, and faster development together.",
       image: "https://res.cloudinary.com/dlnzbkyit/image/upload/v1766610542/wmremove-transformed_2_i2xkni.png",
       github: 'https://github.com/Akarsh-Kumar-Jha/Codox',
       link: 'https://codoox.netlify.app/',
@@ -39,7 +40,7 @@ function FeaturedProjects() {
     {
       id: 2,
       title: "Satvik AI",
-      description: "An AI-powered vegetarian diet planner for healthy eating, lifestyle tracking, and mindful nutrition.",
+      description: "An AI-powered vegetarian diet planner for personalized meal recommendations, lifestyle tracking, and mindful nutrition.",
       image: "https://res.cloudinary.com/dlnzbkyit/image/upload/v1766613050/Gemini_Generated_Image_ffokcpffokcpffok_sf8cd8.jpg",
       github: 'https://github.com/Akarsh-Kumar-Jha/Satvik-Ai',
       link: 'https://satvikai.netlify.app/',
@@ -53,7 +54,7 @@ function FeaturedProjects() {
   ];
 
   return (
-    <div className='min-h-screen w-full flex flex-col justify-center items-center gap-y-10'>
+    <div className='min-h-screen xl:min-h-fit xl:py-10 w-full flex flex-col justify-center items-center gap-y-10 xl:gap-y-6'>
       <h2 className='text-2xl md:text-3xl text-foreground text-left self-start border-b-2 border-border'>
         <span className='text-foreground/60'>Featured</span> Projects
       </h2>
