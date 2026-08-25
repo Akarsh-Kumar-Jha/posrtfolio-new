@@ -1,4 +1,5 @@
 export const dynamic = "force-dynamic";
+import BlogAudioSummary from "@/components/blog/BlogAudioSummary";
 import ScrollToUp from "@/components/ScrollToUp";
 import SectionShowcase from "@/components/SectionShowcase";
 import { Button } from "@/components/ui/button";
@@ -141,6 +142,8 @@ async function Blog({ params }: { params: Promise<{ id: string }> }) {
           <BiCalendar className="text-xl" /> {createdAtDate}
         </p>
       </div>
+
+      <BlogAudioSummary blogId={blogId} />
 
       <div className="mt-5 w-full flex flex-col justify-start items-start gap-y-10 md:gap-y-12">
         {data?.map((section) => (
