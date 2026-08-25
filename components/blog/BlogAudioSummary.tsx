@@ -379,7 +379,7 @@ export default function BlogAudioSummary({ blogId }: BlogAudioSummaryProps) {
                 onClick={handleSpeedChange}
                 aria-label={`Playback speed ${playbackRate}x`}
                 title="Change playback speed"
-                className="px-1.5 py-0.5 bg-secondary hover:bg-accent/20 text-foreground/90 border border-border/60 text-[11px] rounded font-mono font-medium cursor-pointer shrink-0 transition-colors"
+                className="px-2 py-0.5 bg-secondary hover:bg-accent text-black font-mono font-bold text-xs rounded border border-border shrink-0 cursor-pointer transition-colors"
               >
                 {playbackRate}x
               </button>
